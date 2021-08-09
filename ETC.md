@@ -38,4 +38,8 @@ WEM에서 rowID 는 고유의 ROW ID 와 기본 ID를 포함하여 생성되는 
 심플하게 데이터 표현 xml의 오버헤드를 줄이기 위해 출현  
 JavaScriptObjectNotation
 
+### DB 에 isdeleted를 넣는 이유
+- 실제 db에서 삭제하는 것이 아닌 보여지는 값에서 만 제외함
+- 이 데이터들은 분석에 사용 -> 빅데이터
+
 #현장실습#
