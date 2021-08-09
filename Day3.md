@@ -8,7 +8,8 @@
 5. Conditional과 함께 사용 시 시너지 UP
 
 여러 개의 Interaction을 사용해야할 것을 단 한 페이지에 TabBar와 함께 정리 가능
-![](Day3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-08-10%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.57.53.png)
+<img width="1904" alt="스크린샷 2021-08-10 오전 12 57 53" src="https://user-images.githubusercontent.com/61059893/128740082-3b359d63-6fca-47fb-a8ae-d55d9b5967af.png">
+
 
 ### Tab Bar 사용 시, 장점과 단점
 
@@ -18,7 +19,8 @@
   
 > Tab Bar 사용 FlowChart  
 
-![](Day3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-08-10%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.03.27.png)
+<img width="777" alt="스크린샷 2021-08-10 오전 1 03 27" src="https://user-images.githubusercontent.com/61059893/128740102-5aaddfef-5fc6-42bd-8730-8b734b608df5.png">
+
 
 **Tab Bar 사용 시 단점**
 * 탭 바 사용 시에는 Validation Rule이 제대로 적용되지 않을 수 있음 (현재 보고 있는 탭에서만 동작 할 수도 있음(Conditional 사용시)
@@ -27,7 +29,7 @@
    
 > Tab Bar 미사용 FlowChart  
 
-![](Day3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-08-10%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.04.50.png)
+<img width="1054" alt="스크린샷 2021-08-10 오전 1 04 50" src="https://user-images.githubusercontent.com/61059893/128740119-567a60e7-6d92-4d81-bee1-be8969fca26c.png">
 
 
 ## Fragment
@@ -35,7 +37,8 @@
 * Widget이라고 이해하면 됨. HTML과 JS가 작성되어 하나의 기능을 수행하는 요소
 * 자체적으로 로직 수행이 가능해야함.(응집도 높아야함)
 
-![](Day3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-08-10%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.06.39.png)
+<img width="288" alt="스크린샷 2021-08-10 오전 1 06 39" src="https://user-images.githubusercontent.com/61059893/128740132-1e8dfffa-e498-42de-83c8-5e4f30014323.png">
+
 
 
 ## User Enrollment
@@ -43,7 +46,8 @@
 * 하위에 추가적인 LIST 생성 및 활용 전략
 * 새로운 LIST를 사용하여 input 할 예정이 있다면 반드시 추가적인 ADD ROW가 필요하다. (상위 LIST만 ADD ROW하면 안 된다는 말이다.)
 
-![](Day3/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-08-10%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.08.54.png)
+<img width="281" alt="스크린샷 2021-08-10 오전 1 08 54" src="https://user-images.githubusercontent.com/61059893/128740189-f11eb508-f1e6-4223-b9aa-42ab7acbfb22.png">
+
 
 ### Password 생성 및 보안 전략
 Password Hash + Salt + Pepper 전략
