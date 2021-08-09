@@ -1,13 +1,13 @@
 # WEM
 ## The world is ready for WEM
-기술 < 경험 
-IT 직원 -> 비즈니스 관련 역할 수행
-전통적 개발보다 10배 빠름
-javascript + html로 웬만한 custom 가능
-모바일 서비스로 업무도구 전환
-Enterprise-grade solution
-visual development : drag&drop으로 개발 수행
-협업 가능
+* 기술 < 경험  
+* IT 직원 -> 비즈니스 관련 역할 수행
+* 전통적 개발보다 10배 빠름
+* javascript + html로 웬만한 custom 가능
+* 모바일 서비스로 업무도구 전환 추세
+* Enterprise-grade solution
+* visual development : drag&drop으로 개발 수행
+* 협업 가능
 
 ## What is WEM
 * cloud-based 어플리케이션 개발 플랫폼
@@ -15,24 +15,31 @@ visual development : drag&drop으로 개발 수행
 * 웹, 모바일 동시 개발 가능
 
 ## Introduction to WEM
-ontology? - (concepts) - male or female > 효율적인 카테고리 시스템을 구축하고자 사용
+* .NET
+* AJAX
+* Javascript
+* HTML/CSS
+* 등
+
+## Concepts and Tutorials
 
 ### Ontology
 * Concept Set
 	- Concept 
 
+### remote data sources  
+- Odata - 엑셀과 연동
+### real-time messages  
+- vote program : 투표 결과 즉각 보여주는 등 (프로그램 간 통신)
 
-remote data sources - Odata - 엑셀과 연동
-real-time messages - vote program : 투표 결과 즉각 보여주는 등 (프로그램 간 통신)
+### Widget 
+- 부분적 화면 구성 (HTML + Js)
+- <img width="1904" alt="스크린샷 2021-08-10 오전 12 39 58" src="https://user-images.githubusercontent.com/61059893/128733774-6727c50c-5eef-40ce-9be8-9cd36af85120.png">
 
-WIdget - 부분적 화면 구성 (HTML + Js)
-
-
-Header
-menu bar
-main
-
-- - - -
+### Basic Layout
+* Header
+* menu bar
+* main
 
 ### Flowcharts
 
@@ -52,25 +59,12 @@ regular flowchart : user interaction 포함
 
 > 세션 : 클라이언트와 서버 간에 연결  
 
-database
-* hdb
-* ndb
-* rdb
 
-hadoop -> map reduce
-nosql
+### Exits
+노드를 마치며(벗어나면서) 시작될 동작 정의 (Default Exit, Error), 모든 노드는 EXIT를 가진다.
 
-csv : 구분자를 통해서 정리된 데이터
 
-xml : 확장형 mark up language
-json :  심플하게 데이터 표현 xml의 오버헤드를 줄이기 위해 출현, JavaScriptObjectNotation
-
-- - - -
-
-Exits : 노드를 마치며(벗어나면서) 시작될 동작 정의 (Default Exit, Error), 모든 노드는 EXIT를 가진다.
-
-- - - -
-Data Model 
+### Data Model 
 * transient list : 가변성 테이블 (어플 종료시에 함꼐 제거)
 * database list : 데이터베이스에 저장
 
@@ -79,18 +73,8 @@ Data Model
 	- rich text : html 문서라고 보면 된다.
 
 
-::reference variable : 레퍼런스 변수, 테이블 간에 연결을 위해 사용(중복 방지):: -> 더 학습 필요
+reference variable : 레퍼런스 변수, 테이블 간에 연결을 위해 사용(중복 방지) N:N 관계에서 사용
 
-* Concept : 상속과 비슷한 개념, TabBar 만들 때 사용가능
+* Concept : 상속과 비슷한 개념, TabBar 만들 때 사용가능, (with Ontology)
 -> 예를 들어 상위 구조에 변수 타입을 지정하면 하위에도 적용된다. Javascript의 Prototype?
 
-
-
-## 목표
-* 교육 안내
-* 교육 신청
-* 교육 접수의 확정(관리자 승인, 관리자 페이지에서 승인해주면 신청자의 신청이 확인되는 형태)
-+a 통계화면
-
-
-* Cubble 해보기
