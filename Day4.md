@@ -28,7 +28,7 @@
 * Description - Concept의 Description 반환
 * LocalName - Concept의 LocalName으로 변환 (WebService간 통신 시 사용)
 * FindConcepts (text, conceptset, include synonyms) - conceptset의 synonyms에서 text가 포함된 Concept을 찾아서 반환
-> 사용 예시 FindConcepts (“Male”, ‘Gender’, GetChildren(‘Gender’))  
+> 사용 예시 : First(FindConcepts(“Male”, GetChildren([Gender]), true ))  
 > 이런 식으로 작성하면 됨. WebService 통신에서 사용  
   
 * GetChildren - Concept의 모든 자식 Concept 반환
