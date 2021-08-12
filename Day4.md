@@ -39,16 +39,18 @@
   
 ## custom widget 사용 - chart
 User Interaction 화면 그리기 상에서, Custom을 Drag&Drop 하여 사용
-![](Day4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-08-12%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%209.33.25.png)
+<img width="357" alt="스크린샷 2021-08-12 오전 9 33 25" src="https://user-images.githubusercontent.com/61059893/129121262-8464bb7a-4c3a-4abe-bb4d-5b2f83ca0e3d.png">
+
 
 프로젝트 상에서 가진 위젯이 없다면,  Add more widgets here클릭 후
 원하는 widget 다운로드 가능
 
 Chart 생성 후 Chart로 보여질 List 선택
-![](Day4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-08-12%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%209.35.42.png)
+<img width="986" alt="스크린샷 2021-08-12 오전 9 35 42" src="https://user-images.githubusercontent.com/61059893/129121270-cf3234b4-c1e8-46fa-9060-4f9f39e86239.png">
+
 
 **실제 웹 화면**
-![](Day4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-08-12%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%209.36.33.png)
+<img width="1158" alt="스크린샷 2021-08-12 오전 9 36 33" src="https://user-images.githubusercontent.com/61059893/129121288-10d7e85f-7bd2-4b89-acbe-140ee41faff6.png">
 (null 은 Garbage값)
 
 
