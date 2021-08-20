@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>admission</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/33407/static/favicon.ico" />
+		<link rel="stylesheet" href="/33407/static/styles/default.css">
+<link rel="stylesheet" href="/33407/static/styles/customcontrol.css">
+
+		<script src="/33407/static/scripts/jquery-1.12.4.min.js"></script>
+<script src="/33407/static/scripts/jquery.form-4.2.2.js"></script>
+<script src="/33407/static/scripts/bootstrap-3.2.0.min.js"></script>
+<script src="/33407/static/scripts/bootstrap-3-typeahead.js"></script>
+<script src="/33407/static/scripts/runtime-with-debugger.js?v=637644116332457811"></script>
+<script src="/33407/static/scripts/bootstrap-wem-modal-scrollposition-fix.js"></script>
+<script>
+					Runtime.ajaxRequestPath = "/33407/ajaxevent";
+					Runtime.refresh = function() { Runtime.raiseEvent("ajax", "wmtrefresh", "__21", null, "/33407/ajaxevent", arguments[0] || window.event); };
+					Runtime.navigateTo = function(navigationItemId) { Runtime.raiseEvent("post", "wmtnav", "__10", navigationItemId ? navigationItemId.toString() : "", null, arguments[0] || window.event); };
+					Runtime.changeLanguage = function(lang) { Runtime.raiseEvent("ajax", "wmtlang", "__19", lang, "/33407/ajaxevent", arguments[0] || window.event); };
+					Runtime.dismissOverlay = function() { Runtime.raiseEvent("ajax", "wmtdismissoverlay", "__22", null, "/33407/ajaxevent", arguments[0] || window.event); };
+				</script>
+<script>
+						Debugger.resumeExecution = function() { 
+							Runtime.raiseEvent("ajax", "resumeexecution", "__20", null, "/33407/ajaxevent", arguments[0] || window.event); 
+						};
+
+						window.addEventListener("unload", function() {
+							navigator.sendBeacon("/__wem/debugger/33407/stop?sv=637644194935271504", {});
+						});
+					</script>
+
+		<style>
+			html {
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');
+			}
+
+			header {
+				height: 60px;
+			}
+
+			header > div.container {
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');
+			}
+
+			header > div.container > a > img {
+				
+			}
+
+			main {
+				min-height: calc(100% - (50px + 50px + 60px));
+			}
+		</style>
+	</head>
+	<body>
+		<form class="page" method="post" action="" enctype="multipart/form-data">
+			<header class="hidden-xs">
+				<div class="container">
+					<span class="vertical-align-helper"></span>
+					<a class="logo" href="javascript:void(0);" onclick="Runtime.navigateTo();">
+						<img src="/33407/static/images/logo-wem-darkblue.png"></a>
+
+					<h1>admission</h1>
+					
+					
+						<div class="language-select"><select id="wmtlang" name="wmtlang" class="form-control" style="" onchange="Runtime.raiseEvent(&quot;ajax&quot;, &quot;wmtlang&quot;, &quot;__19&quot;, this.value, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);">
+<option value="ko-KR" selected>Korean (Korea)</option>
+<option value="en-US">English (United States)</option>
+</select></div>
+					
+				</div>
+			</header>
+			<div class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-nav">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="javascript:void(0);" onclick="Runtime.navigateTo();" class="navbar-brand visible-xs"><img class="logo-small" src="/33407/static/images/logo-wem-darkblue.png"></a>
+					</div>
+					<div id="main-nav" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+<li class="active mode-cross-link"><a id="navitem194651" href="javascript: void(0)" onclick="Runtime.raiseEvent(&quot;post&quot;, &quot;wmtnav&quot;, &quot;__10&quot;, 194651, &quot;/33407/&quot;, arguments[0] || window.event);">Home</a></li>
+<li class="mode-cross-link"><a id="navitem194658" href="javascript: void(0)" onclick="Runtime.raiseEvent(&quot;post&quot;, &quot;wmtnav&quot;, &quot;__10&quot;, 194658, &quot;/33407/student-proc&quot;, arguments[0] || window.event);">Student Proc</a></li>
+</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+</ul>
+
+						
+							<div class="language-select"><select id="wmtlang" name="wmtlang" class="form-control" style="" onchange="Runtime.raiseEvent(&quot;ajax&quot;, &quot;wmtlang&quot;, &quot;__19&quot;, this.value, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);">
+<option value="ko-KR" selected>Korean (Korea)</option>
+<option value="en-US">English (United States)</option>
+</select></div>
+						
+						<div class="navbar-text navbar-right hidden-xs"></div>
+					</div>
+				</div>
+			</div>
+
+			<main class="container">
+				
+				<div class="btn-toolbar btn-toolbar-align-right"><div class="btn-group"><a role="button" class="btn btn-primary" href="javascript: void(0)" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;tbtn2&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="tbtn2">Add</a></div>
+</div>
+<style>
+
+.table {
+	box-shadow : 0 0.5px 3px grey;
+	padding : 0px;
+	/* margin-bottom: 20px; */
+	border : 0px;
+	border-radius : 10px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 0px;
+}
+
+.img-circle {
+	box-shadow : 0 0.5px 3px grey;
+    border-radius: 50%;
+}
+
+#tbtn1 {
+	background-color : #f08080;
+	border-color : #f08080;
+	margin : 10px;	
+}
+
+img {
+	display : block;
+	margin : auto;
+}
+</style>
+<div class="panel panel-success"><div class="wem-panel-smartmargin"><div class="panel-body"><div class="repeater-grid row"><div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p>From To Date</p></div>
+<div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><div class="btn-toolbar btn-toolbar-align-right"><div class="btn-group"><a role="button" class="btn btn-link" href="javascript: void(0)" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;pnl4_tbtn5&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="pnl4_tbtn5"><i class="wem-icon-inline fa fa-search"></i></a></div>
+</div>
+</div>
+</div>
+<div class="repeater-grid row"><div class="repeater-grid-col col-lg-4 col-md-3 col-sm-4 col-xs-5 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 hidden-lg hidden-md hidden-sm"><input type="hidden" id="pnl4_f4854932" name="pnl4_f4854932" value=""><div class="input-group date" id="dp-pnl4_f4854932"><input type="text" class="form-control" style=""><span class="input-group-btn datepickerbutton"><a role="button" class="btn btn-default"><i class="wem-icon-inline fa fa-calendar"></i></a></span></div>
+</div>
+<div class="repeater-grid-col col-lg-2 col-md-1 col-sm-2 col-xs-1 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 hidden-lg hidden-md hidden-sm"><p class="text-center">~</p></div>
+<div class="repeater-grid-col col-lg-3 col-md-3 col-sm-3 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 hidden-lg hidden-md hidden-sm"><input type="hidden" id="pnl4_f4854934" name="pnl4_f4854934" value=""><div class="input-group date" id="dp-pnl4_f4854934"><input type="text" class="form-control" style=""><span class="input-group-btn datepickerbutton"><a role="button" class="btn btn-default"><i class="wem-icon-inline fa fa-calendar"></i></a></span></div>
+</div>
+<div class="repeater-grid-col col-lg-3 col-md-1 col-sm-3 col-xs-1 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 hidden-lg hidden-md hidden-sm hidden-xs"></div>
+</div>
+</div>
+</div>
+</div>
+<img border="0" class="" src="/33407/static/files/101174/(name).jpeg" /><div class="repeater-grid row"><div class="repeater-grid-col col-lg-12 col-md-12 col-sm-12 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><div class="repeater-vertical"><div class="repeater-items"><div class="repeater-item"><div class="wem-table-wrapper"><table class="table" style="width: 100%">
+<tbody>
+<tr>
+<td style="vertical-align: middle; text-align: left; width: 20%;" class="default" ><div class="repeater-vertical"><div class="repeater-items"></div></div></td>
+<td style="vertical-align: middle; text-align: left; width: 80%;" class="default" ><div class="btn-group"><a  href="javascript:void(0);" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;rep1_ri4853649_2_tbtn9&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="rep1_ri4853649_2_tbtn9"><span class="text-primary">TITLE</span></a></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left;" class="default" ><p class="text-center"></p></td>
+<td style="vertical-align: top; text-align: left;" class="default" ><div class="repeater-grid row"><div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p>21-08-03 17:19</p></div>
+<div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p class="text-right"><span><i class="wem-icon-inline fa fa-thumbs-o-up"></i></span>  :   <img border="0" class="" src="/33407/static/files/101973/space1.png" /> <span><i class="wem-icon-inline fa fa-eye"></i></span> : </p></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div><div class="repeater-item"><div class="wem-table-wrapper"><table class="table" style="width: 100%">
+<tbody>
+<tr>
+<td style="vertical-align: middle; text-align: left; width: 20%;" class="default" ><div class="repeater-vertical"><div class="repeater-items"></div></div></td>
+<td style="vertical-align: middle; text-align: left; width: 80%;" class="default" ><div class="btn-group"><a  href="javascript:void(0);" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;rep1_ri4853649_4_tbtn9&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="rep1_ri4853649_4_tbtn9"><span class="text-primary">안녕하세요</span></a></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left;" class="default" ><p class="text-center"></p></td>
+<td style="vertical-align: top; text-align: left;" class="default" ><div class="repeater-grid row"><div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p>21-08-03 18:37</p></div>
+<div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p class="text-right"><span><i class="wem-icon-inline fa fa-thumbs-o-up"></i></span>  :   <img border="0" class="" src="/33407/static/files/101973/space1.png" /> <span><i class="wem-icon-inline fa fa-eye"></i></span> : </p></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div><div class="repeater-item"><div class="wem-table-wrapper"><table class="table" style="width: 100%">
+<tbody>
+<tr>
+<td style="vertical-align: middle; text-align: left; width: 20%;" class="default" ><div class="repeater-vertical"><div class="repeater-items"></div></div></td>
+<td style="vertical-align: middle; text-align: left; width: 80%;" class="default" ><div class="btn-group"><a  href="javascript:void(0);" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;rep1_ri4853649_5_tbtn9&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="rep1_ri4853649_5_tbtn9"><span class="text-primary">안녕</span></a></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left;" class="default" ><p class="text-center"></p></td>
+<td style="vertical-align: top; text-align: left;" class="default" ><div class="repeater-grid row"><div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p>21-08-03 18:40</p></div>
+<div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p class="text-right"><span><i class="wem-icon-inline fa fa-thumbs-o-up"></i></span>  :   <img border="0" class="" src="/33407/static/files/101973/space1.png" /> <span><i class="wem-icon-inline fa fa-eye"></i></span> : </p></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div><div class="repeater-item"><div class="wem-table-wrapper"><table class="table" style="width: 100%">
+<tbody>
+<tr>
+<td style="vertical-align: middle; text-align: left; width: 20%;" class="default" ><div class="repeater-vertical"><div class="repeater-items"><div class="repeater-item"><p class="text-center"><img border="0" class=" img-circle" src="/33407/filestore/si/4854982/17/4876974/%28name%29.jpeg?etag=3c5ed33e920c27e59777086b0e984b2e&amp;sv=637644194935271504_Qi3swXgHKPa3Ys6Z1IBRCstTWDI6lgvYc3DHhYFVtLU%3d" width="30" height="30" /></p></div></div></div></td>
+<td style="vertical-align: middle; text-align: left; width: 80%;" class="default" ><div class="btn-group"><a  href="javascript:void(0);" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;rep1_ri4853649_6_tbtn9&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="rep1_ri4853649_6_tbtn9"><span class="text-primary">제목테스트</span></a></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left;" class="default" ><p class="text-center">김민수</p></td>
+<td style="vertical-align: top; text-align: left;" class="default" ><div class="repeater-grid row"><div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p>21-08-09 11:30</p></div>
+<div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p class="text-right"><span><i class="wem-icon-inline fa fa-thumbs-o-up"></i></span>  :   <img border="0" class="" src="/33407/static/files/101973/space1.png" /> <span><i class="wem-icon-inline fa fa-eye"></i></span> : </p></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div><div class="repeater-item"><div class="wem-table-wrapper"><table class="table" style="width: 100%">
+<tbody>
+<tr>
+<td style="vertical-align: middle; text-align: left; width: 20%;" class="default" ><div class="repeater-vertical"><div class="repeater-items"><div class="repeater-item"><p class="text-center"><img border="0" class=" img-circle" src="/33407/filestore/si/4854982/18/4876974/2672CDDB-9250-4A92-A178-2A40B2277201.jpeg?etag=73ceb42086b1a82278c7d29836aacc39&amp;sv=637644194935271504_Qi3swXgHKPa3Ys6Z1IBRCstTWDI6lgvYc3DHhYFVtLU%3d" width="30" height="30" /></p></div></div></div></td>
+<td style="vertical-align: middle; text-align: left; width: 80%;" class="default" ><div class="btn-group"><a  href="javascript:void(0);" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;rep1_ri4853649_7_tbtn9&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="rep1_ri4853649_7_tbtn9"><span class="text-primary">김서울의 첫 게시글</span></a></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left;" class="default" ><p class="text-center">김서울</p></td>
+<td style="vertical-align: top; text-align: left;" class="default" ><div class="repeater-grid row"><div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p>21-08-09 12:51</p></div>
+<div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p class="text-right"><span><i class="wem-icon-inline fa fa-thumbs-o-up"></i></span>  :   <img border="0" class="" src="/33407/static/files/101973/space1.png" /> <span><i class="wem-icon-inline fa fa-eye"></i></span> : </p></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div><div class="repeater-item"><div class="wem-table-wrapper"><table class="table" style="width: 100%">
+<tbody>
+<tr>
+<td style="vertical-align: middle; text-align: left; width: 20%;" class="default" ><div class="repeater-vertical"><div class="repeater-items"><div class="repeater-item"><p class="text-center"><img border="0" class=" img-circle" src="/33407/filestore/si/4854982/18/4876974/2672CDDB-9250-4A92-A178-2A40B2277201.jpeg?etag=73ceb42086b1a82278c7d29836aacc39&amp;sv=637644194935271504_Qi3swXgHKPa3Ys6Z1IBRCstTWDI6lgvYc3DHhYFVtLU%3d" width="30" height="30" /></p></div></div></div></td>
+<td style="vertical-align: middle; text-align: left; width: 80%;" class="default" ><div class="btn-group"><a  href="javascript:void(0);" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;rep1_ri4853649_8_tbtn9&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="rep1_ri4853649_8_tbtn9"><span class="text-primary">김서울의 두 번째 글</span></a></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left;" class="default" ><p class="text-center">김서울</p></td>
+<td style="vertical-align: top; text-align: left;" class="default" ><div class="repeater-grid row"><div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p>21-08-09 12:54</p></div>
+<div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p class="text-right"><span><i class="wem-icon-inline fa fa-thumbs-o-up"></i></span>  :   <img border="0" class="" src="/33407/static/files/101973/space1.png" /> <span><i class="wem-icon-inline fa fa-eye"></i></span> : </p></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div><div class="repeater-item"><div class="wem-table-wrapper"><table class="table" style="width: 100%">
+<tbody>
+<tr>
+<td style="vertical-align: middle; text-align: left; width: 20%;" class="default" ><div class="repeater-vertical"><div class="repeater-items"><div class="repeater-item"><p class="text-center"><img border="0" class=" img-circle" src="/33407/filestore/si/4854982/17/4876974/%28name%29.jpeg?etag=3c5ed33e920c27e59777086b0e984b2e&amp;sv=637644194935271504_Qi3swXgHKPa3Ys6Z1IBRCstTWDI6lgvYc3DHhYFVtLU%3d" width="30" height="30" /></p></div></div></div></td>
+<td style="vertical-align: middle; text-align: left; width: 80%;" class="default" ><div class="btn-group"><a  href="javascript:void(0);" onclick="Runtime.raiseEvent(&quot;ajax&quot;, &quot;rep1_ri4853649_9_tbtn9&quot;, &quot;__23&quot;, null, &quot;/33407/ajaxevent&quot;, arguments[0] || window.event);" id="rep1_ri4853649_9_tbtn9"><span class="text-primary">좋은 하루 입니다.</span></a></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: left;" class="default" ><p class="text-center">김민수</p></td>
+<td style="vertical-align: top; text-align: left;" class="default" ><div class="repeater-grid row"><div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p>21-08-09 16:03</p></div>
+<div class="repeater-grid-col col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-0"><p class="text-right"><span><i class="wem-icon-inline fa fa-thumbs-o-up"></i></span>  : 0  <img border="0" class="" src="/33407/static/files/101973/space1.png" /> <span><i class="wem-icon-inline fa fa-eye"></i></span> : 3</p></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div></div></div></div>
+</div>
+<p>&nbsp;</p>
+
+				<div id="buttonbar" class="container clearfix">
+					<div class="pull-left">
+						
+					</div>
+					<div class="pull-right">
+						
+					</div>
+				</div>
+			</main>
+
+			<footer class="clearfix">
+				<div class="container">
+					<div class="row">
+						<div id="powered-by" class="col-xs-12 col-sm-6">
+							<img class="logo" src="/33407/static/images/logo-wem-white.png"> 
+							Created with the <a href="http://wem.io" target="_blank">WEM Modeler</a>. 
+							<span id="nodeinfo">node id = 7556744</span>
+						</div>
+						<div id="footer-menu" class="hidden-xs col-sm-6">
+							<div class="pull-right">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+<input type="hidden" name="__sid" value="77e109d19cca02ea4c321d1ab36ce59c">
+<input type="hidden" name="__sessionVersion" value="637644194935271504_Qi3swXgHKPa3Ys6Z1IBRCstTWDI6lgvYc3DHhYFVtLU=">
+<input type="hidden" name="__eventSource" value="">
+<input type="hidden" name="__eventName" value="">
+<input type="hidden" name="__eventArgs" value="">
+<input type="hidden" name="__loadedModules" value="">
+<input type="hidden" name="__fromOverlay" value="false">
+<input type="hidden" name="__viewState" value="{}">
+
+		</form>
+		<script>
+Runtime.scripts.addScriptReference("comet", "https://comet.wem.io/cometclient.js");
+Runtime.scripts.addScriptReference("moment", "/33407/static/scripts/moment-2.24.0.min.js");
+Runtime.scripts.addScriptReference("moment.locale", "/33407/static/scripts/locale/moment/ko.js", "utf-8");
+Runtime.scripts.addScriptReference("datepicker", "/33407/static/scripts/bootstrap-datetimepicker-4.17.47.wem.min.js");
+</script>
+<script>
+Runtime.scripts.addStartupScript(function() {
+Comet.onreceive = function(message, channel){
+if(channel === "2d8778aa912364f5f10743f0db397bbf"){
+						Debugger.handleMessage(message);
+						return;
+					}
+				
+
+						if(message.IsModificationMessage === true)
+						{
+							if(message.Type === 1) // Template Modified
+							{
+								var previewInfo = {"ProjectId":29957,"NodeId":7556744,"TemplateId":857454};							
+
+								if(message.ProjectId === previewInfo.ProjectId && message.TemplateId === previewInfo.TemplateId)
+									Runtime.raiseEvent("ajax", "wmtrefresh", "__21", null, "/33407/ajaxevent", arguments[0] || window.event);
+							}
+
+							return;
+						}
+					
+
+						Runtime.raiseEvent("ajax", "comet", "__4", typeof message == "string" ? message : JSON.stringify(message), "/33407/ajaxevent", arguments[0] || window.event);
+					}
+						
+					setTimeout(function() { Comet.listen("836c3c6a-3417-4638-9d88-af0431fed110", ["Modeler_Notification29957","2d8778aa912364f5f10743f0db397bbf"]); }, 200);
+				
+
+});
+</script>
+<script>
+Runtime.scripts.addStartupScript(function() {
+Runtime.dateInput.initializeDatePicker("pnl4_f4854932", "yyyy-MM-dd", "ko", false, function() {  });
+});
+</script>
+<script>
+Runtime.scripts.addStartupScript(function() {
+Runtime.dateInput.initializeDatePicker("pnl4_f4854934", "yyyy-MM-dd", "ko", false, function() {  });
+});
+</script>
+<script>
+Runtime.scripts.addStartupScript(function() {
+Runtime.clearSubmitEvent();
+});
+</script>
+
+	</body>
+</html>

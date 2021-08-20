@@ -1,0 +1,132 @@
+<ModellerCustomControl xmlns="http://www.zoombim.nl/dataobjects" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><EditorScript>var element = utility.createElement("div");
+var childDiv = utility.createElement("div");
+element.appendChild(childDiv);
+var img = utility.createElement("img");
+img.src = resources.FileImage;
+img.style.margin = "0px 10px 0px 10px";
+img.style.width = "10%";
+img.style.height = "30px";
+
+element.appendChild(img);
+
+element.style.color = "black";
+element.style.backgroundColor = "#eee";
+element.style.border = "solid 1px #ccc";
+element.style.fontSize = "0.95em";
+element.style.padding = "5px";
+element.style.cursor = "pointer";
+
+return element;</EditorScript><EventHandlers><ModellerCustomControlEventHandler><Name>EventName</Name><RollbackChanges>false</RollbackChanges><Script>/*
+	typical WEM-events:
+	1. Execute a flowchart
+	2. Follow an exit
+	3. Navigate to a navigation item
+	4. Reload page
+	
+for flexibility when using a widget, you can define a dropdown property with these 4 options to let the user decide what type of event should be used.
+Based on the choice you can then let user choose either the Flowchart to execute, the Exit to follow, the Navigation item to navigate.
+
+In this scriptlet you handle the execution of the chosen event.
+
+*/
+
+if @EventType = "FollowExit"
+	follow @EventTemplateExit
+
+elseif @EventType = "ExecuteFlowchart"
+	execute @EventFlowchart
+
+elseif @EventType = "NavigateTo"
+	navigate to @EventNavigationItem
+
+end
+/*
+Reload Page event will automatically occur if event is registered and triggered
+*/</Script></ModellerCustomControlEventHandler></EventHandlers><Fields xmlns:a="http://www.zoombim.nl/wem25/dataobjects"/><Icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABEZVhJZk1NACoAAAAIAAGHaQAEAAAAAQAAABoAAAAAAAOgAQADAAAAAQABAACgAgAEAAAAAQAAADKgAwAEAAAAAQAAADMAAAAASKuGGwAAAfZJREFUOE+Nkl9IU2EYxh9XJjOKEdG88abbbqKrQIal09xkf8TToVkMb6rrIKIMJetiUdKFRDAwo5CiyP7RVTfdJJio04XVTcloOvvjPO5suq153jyfLzs7TcHfxcfzPB/n4X35DmibPF6OsTJjwTYokIb3K7/Ymdmy4PadflbAcDoOeW+t0C/Tcwgr34XW2bIgk8nA5ZWEPmzdB2e1HcNqHOOrSZy3HRS5gFcxsaQo1CafoZnPX6mxxSuyP1qerv2eEVrntTpH3/IqbVrg8kiUTC4JPTk5RcebPULr3Fr8QsH5j/Q89YPWNK28YGDwEd0L32e3QWQqWpzkrzgNTAXK+uhun8TOTGT6EzldPnYGpgL/ydOUSCywK2d2Nkb1Tje7DYqvMPTkGeoddaipsXNiRn+VKz29aGw4hq7u65yuo7fkslnytQdE42Y8CA+S1y+TspzixEBM0OKTsN9mE4WlJGJxtDZ78XDHIlLWncioKt8YWPzudtjuXsBChwOBtg6OgZuhPnh6LmPPUDcOtDqwll7BrspKvjWomBiboLN9IRx6GoIyMo2q/leosFigreaQuyTDWmvHz+ANvHv7AlW7q/mzEvQ9xj+M0hFZoqY3A9TZeU7sphM4FaSjDSeokM1xUk7xGaORKHVdvMrOoJD//9cphegfj5Bbqtl3aOwAAAAASUVORK5CYII=</Icon><Name>MyTest</Name><Properties><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>false</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>53896</Id><IsRequired>false</IsRequired><LabelName>Url</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Url</Name><Precision>0</Precision><RuntimeType>35</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>Expression</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>false</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>53910</Id><IsRequired>false</IsRequired><LabelName>Header</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Header</Name><Precision>0</Precision><RuntimeType>35</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>Expression</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>true</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>54140</Id><IsRequired>false</IsRequired><LabelName>Type_1</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Type_1</Name><Precision>0</Precision><RuntimeType>35</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>DossierItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>true</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>54141</Id><IsRequired>false</IsRequired><LabelName>Type_2</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Type_2</Name><Precision>0</Precision><RuntimeType>35</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>DossierItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>true</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>54142</Id><IsRequired>false</IsRequired><LabelName>Type_3</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Type_3</Name><Precision>0</Precision><RuntimeType>35</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>DossierItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>true</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>54143</Id><IsRequired>false</IsRequired><LabelName>Type_4</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Type_4</Name><Precision>0</Precision><RuntimeType>35</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>DossierItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>true</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>54144</Id><IsRequired>false</IsRequired><LabelName>Value_1</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Value_1</Name><Precision>0</Precision><RuntimeType>29</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>DossierItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>true</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>54145</Id><IsRequired>false</IsRequired><LabelName>Value_2</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Value_2</Name><Precision>0</Precision><RuntimeType>29</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>DossierItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>true</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>54146</Id><IsRequired>false</IsRequired><LabelName>Value_3</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Value_3</Name><Precision>0</Precision><RuntimeType>29</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>DossierItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>true</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>General</Group><Id>54147</Id><IsRequired>false</IsRequired><LabelName>Value_4</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Value_4</Name><Precision>0</Precision><RuntimeType>29</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>DossierItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>false</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>Behavior</Group><Id>53974</Id><IsRequired>false</IsRequired><LabelName>Refreshscreen</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>Refreshscreen</Name><Precision>0</Precision><RuntimeType>35</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>Text</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:int>20994</a:int></VisibleWhenDropdownCondition><VisibleWhenPropertyId>53968</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>false</DossierItemMustBeWritable><DropdownOptions><ModellerCustomControlDropdownPropertyOption><Id>20991</Id><Text>Follow Exit</Text><Value>FollowExit</Value></ModellerCustomControlDropdownPropertyOption><ModellerCustomControlDropdownPropertyOption><Id>20992</Id><Text>Execute Flowchart</Text><Value>ExecuteFlowchart</Value></ModellerCustomControlDropdownPropertyOption><ModellerCustomControlDropdownPropertyOption><Id>20993</Id><Text>Navigate To</Text><Value>NavigateTo</Value></ModellerCustomControlDropdownPropertyOption><ModellerCustomControlDropdownPropertyOption><Id>20994</Id><Text>Refresh Screen</Text><Value>RefreshScreen</Value></ModellerCustomControlDropdownPropertyOption><ModellerCustomControlDropdownPropertyOption><Id>20995</Id><Text>Do Nothing</Text><Value>DoNothing</Value></ModellerCustomControlDropdownPropertyOption></DropdownOptions><FileType>Unknown</FileType><Group>Behavior</Group><Id>53968</Id><IsRequired>false</IsRequired><LabelName>EventType</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>EventType</Name><Precision>0</Precision><RuntimeType>35</RuntimeType><SerializedDefaultValue>FollowExit</SerializedDefaultValue><Type>Dropdown</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>false</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>Behavior</Group><Id>53969</Id><IsRequired>false</IsRequired><LabelName>EventTemplateExit</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>EventTemplateExit</Name><Precision>0</Precision><RuntimeType>5</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>ButtonExit</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:int>20991</a:int></VisibleWhenDropdownCondition><VisibleWhenPropertyId>53968</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>false</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>Behavior</Group><Id>53970</Id><IsRequired>false</IsRequired><LabelName>EventFlowchart</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>EventFlowchart</Name><Precision>0</Precision><RuntimeType>0</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>Flowchart</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:int>20992</a:int></VisibleWhenDropdownCondition><VisibleWhenPropertyId>53968</VisibleWhenPropertyId></ModellerCustomControlProperty><ModellerCustomControlProperty><Description i:nil="true"/><DossierItemMustBeWritable>false</DossierItemMustBeWritable><DropdownOptions/><FileType>Unknown</FileType><Group>Behavior</Group><Id>53971</Id><IsRequired>false</IsRequired><LabelName>EventNavigationItem</LabelName><MaxValue i:nil="true"/><MinValue i:nil="true"/><Name>EventNavigationItem</Name><Precision>0</Precision><RuntimeType>27</RuntimeType><SerializedDefaultValue i:nil="true"/><Type>NavigationItem</Type><VisibleWhenBooleanCondition>true</VisibleWhenBooleanCondition><VisibleWhenDropdownCondition xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><VisibleWhenPropertyId>0</VisibleWhenPropertyId></ModellerCustomControlProperty></Properties><Resources><ModellerCustomControlResource><Extension>.jpg</Extension><HasData>true</HasData><Id>10335</Id><Name>FileImage</Name></ModellerCustomControlResource></Resources><Script>&lt;?
+scriptreference "tensorflowsapi" "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"
+scriptreference "teachablemachinesapi" "https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"
+?&gt;
+
+&lt;?
+register input @Type_1
+register input @Value_1
+register input @Type_2
+register input @Value_2
+register input @Type_3
+register input @Value_3
+register input @Type_4
+register input @Value_4
+?&gt;
+
+&lt;?
+if @EventType &lt;&gt; "DoNothing" 
+    register event @EventName 
+end
+?&gt;
+
+&lt;? scriptmodule "MyBasicWidgetModule" ?&gt;
+	const URL = 'https://teachablemachine.withgoogle.com/models/V1Mhe-YtH/';
+	let model, labelContainer, maxPredictions;
+	
+	// Load the image model and setup the webcam
+	async function init() {
+		const modelURL = URL + 'model.json';
+		const metadataURL = URL + 'metadata.json';
+
+		model = await tmImage.load(modelURL, metadataURL);
+		maxPredictions = model.getTotalClasses();
+
+		alert("초기화 완료");
+	}
+
+	async function predict() {
+		// predict can take in an image, video or canvas html element
+		var image = document.getElementById('face-image');
+		const prediction = await model.predict(image, false);
+		for (let i = 0; i &lt; maxPredictions; i++) {
+		    switch(i){
+		    case 0:
+		    	document.getElementById(&lt;?js OutputId(@Type_1) ?&gt;).value = prediction[i].className;
+				document.getElementById(&lt;?js OutputId(@Value_1) ?&gt;).value = prediction[i].probability.toFixed(2);
+				break;
+			case 1:
+		    	document.getElementById(&lt;?js OutputId(@Type_2) ?&gt;).value = prediction[i].className;
+				document.getElementById(&lt;?js OutputId(@Value_2) ?&gt;).value = prediction[i].probability.toFixed(2);
+				break;
+			case 2:
+		    	document.getElementById(&lt;?js OutputId(@Type_3) ?&gt;).value = prediction[i].className;
+				document.getElementById(&lt;?js OutputId(@Value_3) ?&gt;).value = prediction[i].probability.toFixed(2);
+				break;
+			case 3:
+		    	document.getElementById(&lt;?js OutputId(@Type_4) ?&gt;).value = prediction[i].className;
+				document.getElementById(&lt;?js OutputId(@Value_4) ?&gt;).value = prediction[i].probability.toFixed(2);
+				break;				
+			default:
+				break;
+		    }			
+		}
+			
+        alert("예측완료");
+ 
+        &lt;?raw @EventName ?&gt;
+	}
+&lt;? end ?&gt;
+
+&lt;div id="Sasang-body-widget-&lt;?attr OutputId ()?&gt;" class="Sasang-body-element"&gt;
+	&lt;? if hasvalue(@Url)  ?&gt;
+		&lt;input type="hidden" name="&lt;?attr OutputId(@Type_1) ?&gt;" id="&lt;?attr OutputId(@Type_1) ?&gt;" value="&lt;?attr @Type_1 ?&gt;" /&gt;
+		&lt;input type="hidden" name="&lt;?attr OutputId(@Value_1) ?&gt;" id="&lt;?attr OutputId(@Value_1) ?&gt;" value="&lt;?attr @Value_1 ?&gt;" /&gt;
+		&lt;input type="hidden" name="&lt;?attr OutputId(@Type_2) ?&gt;" id="&lt;?attr OutputId(@Type_2) ?&gt;" value="&lt;?attr @Type_2 ?&gt;" /&gt;
+		&lt;input type="hidden" name="&lt;?attr OutputId(@Value_2) ?&gt;" id="&lt;?attr OutputId(@Value_2) ?&gt;" value="&lt;?attr @Value_2 ?&gt;" /&gt;
+		&lt;input type="hidden" name="&lt;?attr OutputId(@Type_3) ?&gt;" id="&lt;?attr OutputId(@Type_3) ?&gt;" value="&lt;?attr @Type_3 ?&gt;" /&gt;
+		&lt;input type="hidden" name="&lt;?attr OutputId(@Value_3) ?&gt;" id="&lt;?attr OutputId(@Value_3) ?&gt;" value="&lt;?attr @Value_3 ?&gt;" /&gt;
+		&lt;input type="hidden" name="&lt;?attr OutputId(@Type_4) ?&gt;" id="&lt;?attr OutputId(@Type_4) ?&gt;" value="&lt;?attr @Type_4 ?&gt;" /&gt;
+		&lt;input type="hidden" name="&lt;?attr OutputId(@Value_4) ?&gt;" id="&lt;?attr OutputId(@Value_4) ?&gt;" value="&lt;?attr @Value_4 ?&gt;" /&gt;
+
+		&lt;img class="face-image" id="face-image" src="&lt;?attr @Header?&gt;&lt;?attr @Url?&gt;" alt="모나리자1" height="280px" width="180px"&gt;
+		&lt;div&gt;
+			&lt;input type="button" class="init_button" onclick="init()" value="reset"&gt;
+			&lt;input type="button" class="Predict_button" onclick="predict()" value="체질예측"&gt;&lt;/input&gt;
+		&lt;/div&gt;
+	&lt;? end ?&gt;
+&lt;/div&gt;</Script><Styles i:nil="true"/></ModellerCustomControl>
